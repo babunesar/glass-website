@@ -1,0 +1,166 @@
+:root {
+    --text-color: #426696;
+    --text-second-color: #83e2e3;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+main {
+    background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* glass section css */
+.glass {
+    width: 70%;
+    height: 90vh;
+    background: linear-gradient( to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3) );
+    border-radius: 2rem;
+    z-index: 3;
+    backdrop-filter: blur(2rem);
+    display: flex;
+}
+.circle {
+    height: 250px;
+    width: 250px;
+    background: #c6f2ef;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+}
+.circle-1 {
+    top: 5%;
+    right: 5%;
+}
+.circle-2 {
+    bottom: 5%;
+    left: 5%;
+}
+.dashboard {
+    flex: 1;
+    background-color: #edfbfb;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.dashboard h3 {
+    color: var(--text-color);
+}
+.dashboard p, .dashboard ul h3 {
+    color: #658ec6;
+}
+.dashboard ul h3 {
+    font-size: 20px;
+}
+.dashboard ul li a img {
+    margin-right: 20px;
+    height: 30px;
+    width: 30px;
+}
+.dashboard ul li a {
+    display: flex;
+    align-items: center;
+    margin: 27px 0;
+}
+.pro-game {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+    border-radius: 2rem;
+    height: 130px;
+    width: 290px;
+    padding: 0 20px;
+}
+.pro-game img {
+    height: 150px;
+    width: 150px;
+    margin-bottom: 30px;
+}
+.pro-game h2 {
+    color: #fff;
+}
+.avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+.games {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.games h1 {
+    font-size: 2.5rem;
+    color: var(--text-color);
+    margin-bottom: -10px;
+}
+.games input {
+    border-radius: 1rem;
+    background-color: #dff7f9;
+    padding: 8px 30px;
+    border: none;
+    margin-bottom: 10px;
+}
+.card {
+    display: flex;
+    align-items: center;
+    background: linear-gradient( to left top, rgba(255, 255, 255, 0.8), 
+    rgba(255, 255, 255, 0.5) );
+    border-radius: 2rem;
+    padding: 10px 1rem;
+    width: 85%;
+    box-shadow: 6px 6px 20px rgba(122, 122, 122, .21);
+    margin-bottom: 10px;
+}
+.card img {
+    height: 80px;
+    width: 80px;
+}
+.card-info {
+    margin: 0 20px;
+    width: 70%;
+}
+.card-info h2, .card-info p {
+    color: #658ec6;
+}
+.card-info p {
+    margin: 5px 0;
+}
+.progress {
+    height: 20px;
+    width: 90%;
+    background: rgb(220, 220, 220);
+    border-radius: 10px;
+    position: relative;
+}
+.progress::after {
+    content: "";
+    left: 0;
+    top: 0;
+    height: 20px;
+    width: 60%;
+    background: var(--text-second-color);
+    position: absolute;
+    border-radius: 10px 0 0 10px;
+}
+.parcentage h3 {
+    color: var(--text-second-color);
+}
